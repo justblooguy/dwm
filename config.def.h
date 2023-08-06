@@ -81,7 +81,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *browser[]  = { "brave", NULL };
 static const char *fileman[]  = { "thunar", NULL };
-static const char *pmenu[]  = { "powermenu", NULL };
+static const char *powermenu[]  = { "powermenu", NULL };
 
 #include "movestack.c"
 static const Key keys[] = {
@@ -90,7 +90,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
         { MODKEY,                       XK_b,      spawn,          {.v = browser } },
         { MODKEY,                       XK_r,      spawn,          {.v = fileman } },
-        { MODKEY,                       XK_x,      spawn,          {.v = pmenu } },
+        { MODKEY,                       XK_x,      spawn,          {.v = powermenu } },
 	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
